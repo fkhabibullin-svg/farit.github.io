@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your GitHub Page</title>
+    <meta name="description" content="A fast, simple GitHub Pages site." />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Open Graph (nice link previews) -->
+    <meta property="og:title" content="Your GitHub Page" />
+    <meta property="og:description" content="A fast, simple GitHub Pages site." />
+    <meta property="og:type" content="website" />
+  </head>
+
+  <body>
+    <header class="container header">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">◆</span>
+        <span class="brand-name">YourSite</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="themeBtn" class="btn btn-ghost" type="button" aria-label="Toggle theme">
+          Toggle theme
+        </button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <p class="badge">GitHub Pages • Static • Fast</p>
+        <h1>Ship a beautiful site in minutes.</h1>
+        <p class="subhead">
+          This is a minimal starter you can customize—perfect for a portfolio, product page, or docs landing.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects">See projects</a>
+          <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noreferrer">View on GitHub</a>
+        </div>
+
+        <div class="card stats" role="list">
+          <div class="stat" role="listitem">
+            <div class="stat-num" id="visits">—</div>
+            <div class="stat-label">Visits (local)</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat-num">0ms</div>
+            <div class="stat-label">Backend</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Static</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <h2>Features</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Responsive</h3>
+            <p>Looks great on mobile, tablet, and desktop.</p>
+          </article>
+          <article class="card">
+            <h3>Theme toggle</h3>
+            <p>Light/dark theme saved in local storage.</p>
+          </article>
+          <article class="card">
+            <h3>Easy deploy</h3>
+            <p>Push to GitHub and enable Pages—done.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="grid">
+          <a class="card link-card" href="#" aria-label="Project One">
+            <h3>Project One</h3>
+            <p>A short description of what it does.</p>
+            <span class="chip">HTML</span><span class="chip">CSS</span>
+          </a>
+          <a class="card link-card" href="#" aria-label="Project Two">
+            <h3>Project Two</h3>
+            <p>Another project. Link to repo or live demo.</p>
+            <span class="chip">JS</span><span class="chip">API</span>
+          </a>
+          <a class="card link-card" href="#" aria-label="Project Three">
+            <h3>Project Three</h3>
+            <p>Something you’re proud of.</p>
+            <span class="chip">Tooling</span><span class="chip">UX</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="card">
+          <form id="contactForm">
+            <div class="row">
+              <label>
+                Name
+                <input name="name" type="text" placeholder="Jane Doe" required />
+              </label>
+              <label>
+                Email
+                <input name="email" type="email" placeholder="jane@example.com" required />
+              </label>
+            </div>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Say hello..." required></textarea>
+            </label>
+            <div class="actions">
+              <button class="btn btn-primary" type="submit">Send</button>
+              <p class="hint">This demo form doesn’t send email—hook it up later (Formspree, Netlify Forms, etc.).</p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>
+        © <span id="year"></span> Your Name •
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        • <a href="#top">Back to top</a>
+      </p>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
