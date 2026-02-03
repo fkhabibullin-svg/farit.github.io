@@ -6,39 +6,29 @@
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
   // Theme persistence
-  const THEME_KEY = "ghpages_theme";
-  const savedTheme = localStorage.getItem(THEME_KEY);
+  const THEME_KEY = "phd_theme";
+  const saved = localStorage.getItem(THEME_KEY);
 
-  if (savedTheme === "light" || savedTheme === "dark") {
-    root.setAttribute("data-theme", savedTheme);
+  if (saved === "light" || saved === "dark") {
+    root.setAttribute("data-theme", saved);
   } else {
-    // Default: respect system preference
     const prefersLight = window.matchMedia?.("(prefers-color-scheme: light)")?.matches;
     root.setAttribute("data-theme", prefersLight ? "light" : "dark");
   }
 
-  const themeBtn = document.getElementById("themeBtn");
-  themeBtn?.addEventListener("click", () => {
-    const current = root.getAttribute("data-theme") || "dark";
-    const next = current === "dark" ? "light" : "dark";
+  document.getElementById("themeBtn")?.addEventListener("click", () => {
+    const cur = root.getAttribute("data-theme") || "dark";
+    const next = cur === "dark" ? "light" : "dark";
     root.setAttribute("data-theme", next);
     localStorage.setItem(THEME_KEY, next);
   });
 
-  // Simple local visit counter (per-browser)
-  const VISITS_KEY = "ghpages_visits";
-  const visits = (Number(localStorage.getItem(VISITS_KEY)) || 0) + 1;
-  localStorage.setItem(VISITS_KEY, String(visits));
-  const visitsEl = document.getElementById("visits");
-  if (visitsEl) visitsEl.textContent = String(visits);
-
-  // Demo contact form
-  const form = document.getElementById("contactForm");
-  form?.addEventListener("submit", (e) => {
+  // Demo contact form handler
+  document.getElementById("contactForm")?.addEventListener("submit", (e) => {
     e.preventDefault();
-    const data = new FormData(form);
+    const data = new FormData(e.currentTarget);
     const name = String(data.get("name") || "");
-    alert(`Thanks, ${name || "friend"}! (This demo form doesn't send yet.)`);
-    form.reset();
+    alert(`Thanks, ${name || "there"}! This demo form doesn't send messages yet.`);
+    e.currentTarget.reset();
   });
 })();
