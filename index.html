@@ -3,8 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Your Name — PhD Robotics</title>
-    <meta name="description" content="PhD robotics researcher working on autonomy, manipulation, and robot learning." />
+    <title>Farit Khabibullin — PhD Robotics</title>
+    <meta
+      name="description"
+      content="Farit Khabibullin — robotics researcher. Interests: robot learning, manipulation, autonomy, sim-to-real."
+    />
+
+    <!-- Identity links -->
+    <link rel="me" href="https://www.linkedin.com/in/farit-khabibullin-4a1330213/" />
+
+    <!-- Structured data (helps search engines) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Farit Khabibullin",
+        "url": "https://YOUR_GITHUB_USERNAME.github.io/",
+        "sameAs": [
+          "https://www.linkedin.com/in/farit-khabibullin-4a1330213/",
+          "https://github.com/YOUR_GITHUB_USERNAME"
+        ],
+        "jobTitle": "PhD Candidate (Robotics)",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "YOUR UNIVERSITY / LAB"
+        }
+      }
+    </script>
 
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -14,7 +39,7 @@
       <div class="brand">
         <a class="brand-link" href="#top" aria-label="Home">
           <span class="logo" aria-hidden="true">R</span>
-          <span class="brand-name">Your Name</span>
+          <span class="brand-name">Farit Khabibullin</span>
         </a>
         <span class="brand-sub">PhD Candidate • Robotics</span>
       </div>
@@ -37,11 +62,12 @@
         <div class="hero-grid">
           <div class="hero-text">
             <p class="badge">Robotics • Autonomy • Learning</p>
-            <h1>Building robots that learn to act safely in the real world.</h1>
+            <h1>Robots that learn to act safely and robustly in the real world.</h1>
+
             <p class="subhead">
-              I’m a PhD candidate in <strong>Robotics</strong> at <strong>Your University</strong>, advised by
-              <strong>Prof. Advisor Name</strong>. My work focuses on robot learning for manipulation and
-              navigation, with an emphasis on robustness, safety, and sim-to-real transfer.
+              I’m <strong>Farit Khabibullin</strong>, a PhD candidate in <strong>Robotics</strong>.
+              My work focuses on learning-based control for manipulation and navigation, with an emphasis on
+              robustness, safety, and sim-to-real transfer.
             </p>
 
             <div class="actions">
@@ -50,7 +76,14 @@
                 Google Scholar
               </a>
               <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="btn btn-ghost" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a
+                class="btn btn-ghost"
+                href="https://www.linkedin.com/in/farit-khabibullin-4a1330213/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
             </div>
 
             <div class="card highlights" role="list">
@@ -60,7 +93,7 @@
               </div>
               <div class="highlight" role="listitem">
                 <div class="highlight-title">Methods</div>
-                <div class="highlight-body">RL/IL, trajectory optimization, perception, probabilistic models</div>
+                <div class="highlight-body">RL/IL, optimization, perception, probabilistic modeling</div>
               </div>
               <div class="highlight" role="listitem">
                 <div class="highlight-title">Open to</div>
@@ -74,19 +107,25 @@
               <img
                 class="headshot"
                 src="./assets/headshot.jpg"
-                alt="Portrait of Your Name"
+                alt="Portrait of Farit Khabibullin"
                 onerror="this.style.display='none'"
               />
               <div class="profile-info">
-                <h2 class="profile-name">Your Name</h2>
+                <h2 class="profile-name">Farit Khabibullin</h2>
                 <p class="profile-meta">
                   PhD Candidate, Robotics<br />
-                  Your Lab / Your University<br />
+                  YOUR LAB / YOUR UNIVERSITY<br />
                   City, Country
                 </p>
                 <div class="profile-links">
                   <a href="mailto:you@university.edu">you@university.edu</a>
-                  <a href="https://twitter.com/" target="_blank" rel="noreferrer">Twitter/X</a>
+                  <a
+                    href="https://www.linkedin.com/in/farit-khabibullin-4a1330213/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    linkedin.com/in/farit-khabibullin-4a1330213
+                  </a>
                 </div>
               </div>
             </div>
@@ -94,5 +133,216 @@
             <div class="divider"></div>
 
             <div class="news">
-              <h3 class="section-mini"
+              <h3 class="section-mini">News</h3>
+              <ul class="list">
+                <li><span class="pill">2026</span> Add your latest acceptance / preprint here.</li>
+                <li><span class="pill">2025</span> Add a release / talk / award here.</li>
+                <li><span class="pill">2024</span> Add an internship / milestone here.</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
 
+      <!-- RESEARCH -->
+      <section id="research" class="section">
+        <h2>Research</h2>
+        <p class="muted">
+          I work on robotics methods that are reliable under distribution shift and real-world uncertainty.
+          My current interests include uncertainty-aware policies for contact-rich manipulation, sim-to-real
+          adaptation, and robust navigation under partial observability.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Robot learning for manipulation</h3>
+            <p class="muted">
+              Learning policies for contact-rich tasks using RL/IL, with structured priors and uncertainty estimation.
+            </p>
+            <ul class="bullets">
+              <li>Grasping, insertion, tool use</li>
+              <li>Offline RL, imitation learning</li>
+              <li>Safety constraints & failure recovery</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Sim-to-real transfer</h3>
+            <p class="muted">
+              Improving generalization from simulation by aligning representations and adapting dynamics online.
+            </p>
+            <ul class="bullets">
+              <li>Domain randomization & adaptation</li>
+              <li>Self-supervised perception</li>
+              <li>Benchmarking & evaluation</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Autonomy & navigation</h3>
+            <p class="muted">
+              Robust navigation with learned perception and planning, including risk-aware decision-making.
+            </p>
+            <ul class="bullets">
+              <li>Semantic mapping</li>
+              <li>Trajectory optimization</li>
+              <li>Risk-aware control</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- PUBLICATIONS -->
+      <section id="publications" class="section">
+        <div class="section-head">
+          <h2>Selected publications</h2>
+          <div class="section-actions">
+            <a class="btn btn-ghost" href="https://scholar.google.com/" target="_blank" rel="noreferrer">
+              Full list on Scholar
+            </a>
+          </div>
+        </div>
+
+        <div class="pubs">
+          <article class="card pub">
+            <div class="pub-top">
+              <h3 class="pub-title">Paper Title One: Robust Policy Learning for Contact-Rich Manipulation</h3>
+              <div class="pub-venue">ConferenceName 2026</div>
+            </div>
+            <div class="pub-authors muted">Farit Khabibullin, Coauthor A, Coauthor B, Advisor Name</div>
+            <p class="muted">One-sentence summary of the contribution and impact.</p>
+            <div class="pub-links">
+              <a href="#" target="_blank" rel="noreferrer">PDF</a>
+              <a href="#" target="_blank" rel="noreferrer">Project</a>
+              <a href="#" target="_blank" rel="noreferrer">Code</a>
+              <a href="#" target="_blank" rel="noreferrer">BibTeX</a>
+            </div>
+          </article>
+
+          <article class="card pub">
+            <div class="pub-top">
+              <h3 class="pub-title">Paper Title Two: Sim-to-Real Adaptation with Representation Alignment</h3>
+              <div class="pub-venue">Journal/Conference 2025</div>
+            </div>
+            <div class="pub-authors muted">Farit Khabibullin, Coauthor C, Advisor Name</div>
+            <p class="muted">One-sentence summary of the main idea and results.</p>
+            <div class="pub-links">
+              <a href="#" target="_blank" rel="noreferrer">PDF</a>
+              <a href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="card pub">
+            <div class="pub-top">
+              <h3 class="pub-title">Paper Title Three: Risk-Aware Navigation Under Uncertainty</h3>
+              <div class="pub-venue">ConferenceName 2024</div>
+            </div>
+            <div class="pub-authors muted">Farit Khabibullin, Coauthor D, Coauthor E</div>
+            <p class="muted">One-sentence summary.</p>
+            <div class="pub-links">
+              <a href="#" target="_blank" rel="noreferrer">PDF</a>
+              <a href="#" target="_blank" rel="noreferrer">Video</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="grid">
+          <a class="card link-card" href="#" aria-label="Project: Manipulation Benchmark">
+            <h3>Manipulation Benchmark</h3>
+            <p class="muted">Dataset + tasks for evaluating generalization in contact-rich manipulation.</p>
+            <div class="tags">
+              <span class="chip">PyTorch</span><span class="chip">ROS</span><span class="chip">Sim</span>
+            </div>
+          </a>
+
+          <a class="card link-card" href="#" aria-label="Project: Mobile Robot Stack">
+            <h3>Mobile Robot Stack</h3>
+            <p class="muted">Navigation pipeline with learned perception, mapping, and planning.</p>
+            <div class="tags">
+              <span class="chip">SLAM</span><span class="chip">Planning</span><span class="chip">C++</span>
+            </div>
+          </a>
+
+          <a class="card link-card" href="#" aria-label="Project: Open-source Tools">
+            <h3>Open-source Tools</h3>
+            <p class="muted">Tooling for reproducible robotics research: evaluation, logging, simulation wrappers.</p>
+            <div class="tags">
+              <span class="chip">Tooling</span><span class="chip">Repro</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- TEACHING -->
+      <section id="teaching" class="section">
+        <h2>Teaching</h2>
+        <div class="card">
+          <ul class="list">
+            <li><span class="pill">2025</span> TA — Robot Learning (YOUR UNIVERSITY)</li>
+            <li><span class="pill">2024</span> TA — Robotics: Perception & Control</li>
+            <li><span class="pill">2023</span> Guest lecture — Safe Reinforcement Learning</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="grid contact-grid">
+          <div class="card">
+            <h3>Quick links</h3>
+            <ul class="list">
+              <li><a href="mailto:you@university.edu">you@university.edu</a></li>
+              <li><a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a></li>
+              <li><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/farit-khabibullin-4a1330213/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Message</h3>
+            <form id="contactForm">
+              <label>
+                Name
+                <input name="name" type="text" placeholder="Your name" required />
+              </label>
+              <label>
+                Email
+                <input name="email" type="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="4" placeholder="Hello..." required></textarea>
+              </label>
+              <div class="actions">
+                <button class="btn btn-primary" type="submit">Send</button>
+                <p class="hint">Demo only (no email). Use Formspree/Netlify Forms to enable submissions.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>
+        © <span id="year"></span> Farit Khabibullin •
+        <a href="#top">Back to top</a>
+      </p>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
